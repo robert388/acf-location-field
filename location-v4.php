@@ -20,7 +20,7 @@ class acf_field_location extends acf_field
 	{
 		// vars
 		$this->name = 'location-field';
-		$this->label = __('Location Map');
+		$this->label = __('Location Map','acf-location-field');
 		$this->category = __('Content','acf');
 		$this->defaults = array(
 			'center' => '48.856614,2.3522219000000177',
