@@ -376,6 +376,11 @@ class acf_field_location extends acf_field
 		// format value
 		$value = explode('|', $value);
 		
+		//handle situations where field has no value
+		if( !isset( $value[1] ) ) {
+			return false;
+		}
+
 		if( $field['val'] == 'address' )
 		{
 			$value = array( 'coordinates' => $value[1], 'address' => $value[0] );
